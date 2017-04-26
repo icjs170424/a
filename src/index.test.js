@@ -10,11 +10,11 @@ describe('Our first test', () => {
 });
 
 describe('Index.html', () => {
-      it('should say hello', (done) => {
+      it('should say users', (done) => {
             const index = fs.readFileSync('./src/index.html', "utf-8");
             jsdom.env(index, function(err, window) {
                   const h1 = window.document.getElementsByTagName('h1')[0];
-                  expect(h1.innerHTML).to.equal("Hello World!");
+                  expect(h1.innerHTML).to.equal("Users");
                   done();
                      /*************************
                       * NOTE: done() is required when async requests are involved!!!

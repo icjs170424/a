@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": 81011698,
+      "firstName": "Triston",
+      "lastName": "Wisozk",
+      "email": "Zoey73@hotmail.com"
+    },
+    {
+      "id": 66778722,
+      "firstName": "Maribel",
+      "lastName": "Kovacek",
+      "email": "Gretchen_Reilly28@gmail.com"
+    },
+    {
+      "id": 58958139,
+      "firstName": "Tamara",
+      "lastName": "Boyle",
+      "email": "Russel0@gmail.com"
+    },
+    {
+      "id": 4941477,
+      "firstName": "Mateo",
+      "lastName": "Huels",
+      "email": "Asha.Pfannerstill33@yahoo.com"
+    },
+    {
+      "id": 73639144,
+      "firstName": "Tony",
+      "lastName": "Dietrich",
+      "email": "Sherwood_Douglas@hotmail.com"
+    }
+  ]
+}
