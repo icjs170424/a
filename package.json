@@ -13,7 +13,11 @@
      "test:watch": "npm run test -- --watch",
      "generate-mock-data": "babel-node buildScripts/generateMockData",
      "prestart-mockapi": "npm run generate-mock-data",
-     "start-mockapi": "json-server --watch src/api/db.json --port 1924"
+     "start-mockapi": "json-server --watch src/api/db.json --port 1924",
+     "clean-dist": "rimraf ./dist && mkdir dist",
+     "prebuild-prod": "npm-run-all clean-dist test lint",
+     "build-prod": "babel-node buildScripts/buildProd.js",
+     "postbuild-prod": "babel-node buildScripts/distServer.js"
   },
   "author": "Cory House",
   "license": "MIT",

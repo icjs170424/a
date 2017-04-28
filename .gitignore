@@ -1,4 +1,9 @@
 *.swp
+dist/*
+heroku-root/*
+heroku
+
+
 # Logs
 logs
 *.log
