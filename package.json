@@ -17,7 +17,8 @@
      "clean-dist": "rimraf ./dist && mkdir dist",
      "prebuild-prod": "npm-run-all clean-dist test lint",
      "build-prod": "babel-node buildScripts/buildProd.js",
-     "postbuild-prod": "babel-node buildScripts/distServer.js"
+     "postbuild-prod": "babel-node buildScripts/distServer.js",
+     "deploy": "surge ./dist"
   },
   "author": "Cory House",
   "license": "MIT",
@@ -54,6 +55,7 @@
     "open": "0.0.5",
     "rimraf": "2.5.4",
     "style-loader": "0.13.1",
+    "surge": "0.18.0",
     "webpack": "1.13.2",
     "webpack-dev-middleware": "1.8.4",
     "webpack-hot-middleware": "2.13.0",
